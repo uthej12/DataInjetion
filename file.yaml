@@ -1,0 +1,94 @@
+file_type: csv
+dataset_name: Parking_Violations_2015
+file_name: Parking_Violations_2015
+inbound_delimiter: ","
+outbound_delimiter: "|"
+skip_leading_rows: 1
+columns: 
+    - Summons Number 
+    - Plate ID 
+    - Registration State
+    - Plate Type
+    - Issue Date 
+    - Violation Code 
+    - Vehicle Body Type
+    - Vehicle Make
+    - Issuing Agency 
+    - Street Code1
+    - Street Code2
+    - Street Code3 
+    - Vehicle Expiration Date
+    - Violation Location
+    - Violation Precinct
+    - Issuer Precinct
+    - Issuer Code
+    - Issuer Command 
+    - Issuer Squad
+    - Violation Time
+    - Time First Observed
+    - Violation County 
+    - Violation In Front Of Or Opposite
+    - House Number
+    - Street Name
+    - Intersecting Street
+    - Date First Observed
+    - Law Section 
+    - Sub Division 
+    - Violation Legal Code
+    - Days Parking In Effect
+    - From Hours In Effect
+    - To Hours In Effect
+    - Vehicle Color
+    - Unregistered Vehicle
+    - Vehicle Year
+    - Meter Number
+    - Feet From Curb
+    - Violation Post Code
+    - Violation Description
+    - No Standing or Stopping Violation
+    - Hydrant Violation
+    - Double Parking Violation
+    - Latitude
+    - Longitude 
+    - Community Board
+    - Community Council 
+    - Census Tract
+    - BIN
+    - BBL
+    - NTA
+drop_columns:
+    - No Standing or Stopping Violation
+    - Hydrant Violation
+    - Double Parking Violation
+    - Latitude
+    - Longitude
+    - Community Board
+    - Community Council 
+    - Census Tract
+    - BIN
+    - BBL
+    - NTA
+    - Violation Legal Code
+    - Time First Observed
+    - Unregistered Vehicle
+    - Meter Number
+    - Violation County
+    - Violation In Front Of Or Opposite
+    - House Number
+    - Intersecting Street
+    - Days Parking In Effect
+    - From Hours In Effect
+    - To Hours In Effect
+    - Meter Number
+    - Violation Post Code
+    
+dtypes:
+    - Feet From Curb: float64
+    - Law Section: float64
+    - Vehicle Year: float64
+    - Violation Legal Code: object
+    - Double Parking Violation: object
+    - Hydrant Violation: object
+    - No Standing or Stopping Violation: object
+drop_null: True
+output_file_name: final

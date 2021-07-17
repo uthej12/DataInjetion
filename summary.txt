@@ -1,0 +1,3 @@
+Number of rows:11809233
+Number of columns:28
+File Size:597160372
